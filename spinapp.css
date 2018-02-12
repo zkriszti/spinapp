@@ -6,7 +6,7 @@ body {font-family: 'Montserrat', sans-serif; margin: 0;}
 h2 {text-transform: uppercase;	font-size: 1.8rem; text-align: center;}
 sup {font-size: 0.5em; margin-left: 1em;}
 #hint-area, #iconlist, #profiling-area {background: rgba(224,224,224,0.5); display: inline-block;}
-#hint-area {margin-top: 0; padding-right: 30px;}
+#hint-area {margin-top: 0; padding-right: 20px 30px;}
 #iconlist, #profiling-area {margin-bottom: 20px;}
 #iconlist {padding: 5px; background: #bccfe0; clear: both; overflow: hidden;}
 #iconlist li, .drills li {list-style-type: none; margin-right: 4px; float: left;}
