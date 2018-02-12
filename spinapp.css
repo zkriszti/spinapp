@@ -1,0 +1,84 @@
+* {box-sizing: border-box;}
+body {font-family: 'Montserrat', sans-serif; margin: 0;}
+
+#bg {max-width: 100%; z-index: -5000;}
+#content {margin: 0 20px;}
+h2 {text-transform: uppercase;	font-size: 1.8rem; text-align: center;}
+sup {font-size: 0.5em; margin-left: 1em;}
+#hint-area, #iconlist, #profiling-area {background: rgba(224,224,224,0.5); display: inline-block;}
+#hint-area {margin-top: 0; padding-right: 30px;}
+#iconlist, #profiling-area {margin-bottom: 20px;}
+#iconlist {padding: 5px; background: #bccfe0; clear: both; overflow: hidden;}
+#iconlist li, .drills li {list-style-type: none; margin-right: 4px; float: left;}
+#iconlist li {margin-right: 3px;}
+#iconlist img {width: 25px; height: auto;}
+#iconlist img:nth-child(5) {clear: left;}
+#iconlist img:nth-child(n+5) {margin-top: 4px;}
+#profiling-area {padding: 5px 20px; display: inline-block;}
+#tracklist .trackrow {display: block; padding: 0 0 5px 0;}
+
+.trackrow input, .trackrow .drills {display: block; float: none;}
+.trackrow::after {
+	clear: both;
+	display: table;
+	content: '';
+}
+
+.trackrow .track-input {max-width: 100px;}
+.trackrow .track-input, .trackrow .note-input {font-size: 0.8em;}
+
+.drills {
+	max-width: 100%;
+	text-align: center;
+	/*background: #96e1acb3;*/
+	display: block;
+	height: 23px;
+	margin: 0 4px 0 0;
+	border: 2px dashed #666;
+	position: relative;
+}
+
+.drills img {
+	width: 19px;
+	height: 19px;
+	margin-right: 3px;
+	z-index: 6000;
+}
+
+.rowControls {
+	border: 0px;
+	line-height: 36px;
+	font-family: 'Montserrat', sans-serif;
+	background: #bbb;
+	margin-bottom: 5px;
+}
+
+.ui-draggable-dragging {box-shadow: 1px grey;}
+
+footer {
+	padding: 20px 25px;
+	background: #ddd;
+	font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 540px) {
+	#bg {position: absolute; top: 0;}
+	h2 {font-size: 1.5rem;}
+	.drills {min-width: 230px;}
+}
+
+@media only screen and (min-width: 768px) {
+	.trackrow input, .trackrow .drills {display: block; float: left;}
+	.trackrow .drills {margin: 0 4px;}
+	footer {margin-top: -40px;}
+}
+
+@media only screen and (min-width: 960px) {
+	#iconlist-title {font-size: 2.5rem;}
+}
+
+@media print {
+	#bg, #iconlist-title, #iconlist, .rowControls, #hint-area {display: none;}
+	.drills {border: 0px;}
+	.trackrow .track-input, .trackrow .drills, .trackrow .note-input {float: left;}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+	<head>
+		<link href="spinapp.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300&amp;subset=latin-ext" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	</head>
+	<body>
+	<div id='wrapper'>
+		<!-- Photo by Simon Connellan on Unsplash -->
+		<img src='simon-connellan-465904-1920.jpg' id='bg'>
+		<div id='content'>
+			<h2 id='iconlist-title'>Drag &amp; drop profile builder for Spinning&reg; class<sup>BETA</sup></h2>
+			<ul id='hint-area'>
+				<li class='hint'>Drag the the Spinning&reg; icons FROM THE BLUE AREA to the dashed area.</li>
+				<li class='hint'>To remove a drill once added, just double-click on it.</li>
+				<li class='hint'>To add the next song, just use the 'Add Track' button.</li>
+				<li class='hint'>When you are ready, just print your profile. Have fun teaching it! :)</li>
+			</ul>
+			<div id='iconlist-container'>
+				<ul id='iconlist'>
+						<li><img src='icomoon_9_icons\PNG\seatedflat.png'></li>
+						<li><img src='icomoon_9_icons\PNG\standingflat.png'></li>
+						<li><img src='icomoon_9_icons\PNG\flatjumps.png'></li>
+						<li><img src='icomoon_9_icons\PNG\sprintflat.png'></li>
+						<li><img src='icomoon_9_icons\PNG\seatedclimb.png'></li>
+						<li><img src='icomoon_9_icons\PNG\runwithresistance.png'></li>
+						<li><img src='icomoon_9_icons\PNG\standingclimb.png'></li>
+						<li><img src='icomoon_9_icons\PNG\hilljumps.png'></li>
+						<li><img src='icomoon_9_icons\PNG\sprinthill.png'></li>
+				</ul>
+			</div>
+			<div id="profiling-container">
+				<div id="profiling-area">
+					<h2 id='profiling-title'>Plan your profile:</h2>
+					<div id='tracklist'></div>
+					<button class="rowControls" id="addtrack" onclick="addNodeLast()">(+) Add Track</button>
+					<button class="rowControls" id="removetrack" onclick="removeNodeLast()">(-) Remove last row</button>
+					<button class="rowControls" id="printprofile">PRINT MY PROFILE!</button>
+				</div>
+			</div>
+		</div>
+	</div><footer>
+			<script src="spinapp.js"></script>
+			<div id='colophon'>
+				<p>Idea, design &amp; sitebuild by: <a href='http://webdizz.hu'>Krisztina Závecz</a></p>
+				<p>SPIN®, SPINNER®, SPINNING® ARE REGISTERED TRADEMARKS OWNED BY MAD DOGG ATHLETICS.</p>
+			</div>
+		</footer>
+
+	</body>
